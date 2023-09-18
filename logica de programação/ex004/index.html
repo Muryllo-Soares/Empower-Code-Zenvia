@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+</head>
+<body>
+    <script>
+        const clientesBeloHorizonte = 23
+        const clientesSaoPaulo = 12
+        const clientesSalvador = 11
+        const clientesCampoGrande = 10
+        const clientesCuritiba = 8
+
+        const total = clientesBeloHorizonte + clientesSaoPaulo + clientesSalvador + clientesCampoGrande + clientesCuritiba
+
+        document.write("Nas capitais de BH, SP, MS e PR, jéssica possui " + total + " clientes. <br><br>")
+
+        
+
+        const faturamentoBh = 2950
+        const faturamentoSp = 3950
+        const faturamentoSalv = 1329
+        const faturamentoCg = 2412
+        const faturamentoCur = 626
+
+        document.write("Faturamento médio por clientes:<br><br>")
+        document.write("Belo Horizonte: " + "R$ " + Math.round(faturamentoBh/clientesBeloHorizonte) + "<br>")
+        document.write("São Paulo: " + "R$ " + Math.round(faturamentoSp/clientesSaoPaulo) + "<br>")
+        document.write("Salvador: " + "R$ " + Math.round(faturamentoSalv/clientesSalvador) + "<br>")
+        document.write("Campo Grande: " + "R$ " + Math.round(faturamentoCg/clientesCampoGrande) + "<br>")
+        document.write("Curitiba: " + "R$ " + Math.round(faturamentoCur/clientesCuritiba) + "<br>")
+
+    </script>
+</body>
+</html>
