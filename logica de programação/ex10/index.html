@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("Informe seu nome")
+        const destino = prompt("Informe seu Destino")
+        const valorPassagens = parseInt(prompt("Informe Valor das passagens")) 
+        const diariaHotel = parseInt(prompt("Informe quantas diarias no hotel")) 
+        const valorDiariaHotel = diariaHotel * 250
+        const valorGuia = 2000
+        const custoFixos = 150
+
+        document.write(
+            `Olá, ${nome}! É um prazer termos você como cliente e estamos ansiosos para que sua viagem para ${destino} ocorrer em breve!
+            Estou te encaminhando os custos: <br>
+            As passagens ficarão em torno de R$ ${valorPassagens} <br>
+            Os custos para a acomodação de 5 dias serão de R$ ${valorDiariaHotel} <br>
+            O guia local custará R$ ${valorGuia} <br>
+            Sua viagem custará R$ ${valorPassagens + valorDiariaHotel + valorGuia + custoFixos}! `
+            )
+    </script>
+</body>
+</html>
