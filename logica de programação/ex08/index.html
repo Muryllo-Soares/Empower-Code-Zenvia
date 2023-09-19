@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex08</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("Informe seu nome:")
+        const idade = prompt("Informe sua idade:")
+
+        if(idade >= 18 && idade <= 70){
+            document.write(nome + " Tem " + idade +" anos " + " VOTO OBRIGATORIO!" + "<br>")
+        } else if (idade <= 16) {
+            document.write (nome + " Tem " + idade + " anos " + " NÃO VOTA!" + "<br>")
+        } else {
+            document.write (nome + " Tem " + idade + " anos " + " VOTO OPCIONAL!")
+        }
+    </script>
+</body>
+</html>
